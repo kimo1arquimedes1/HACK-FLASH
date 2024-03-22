@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - solo para expedientes recientes</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplicación de procesamiento de datos</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <textarea id="datos" placeholder="Pega tus datos aquí, SE DEBE COPIAR LAS FILAS DESDE NUMERO DE EXPEDIENTE HASTA TRATAMIENTO, LA APLICACION ELIMINARA LO QUE NO SE NECESITA, POSTERIORMENTE DAR CLICK EN EL BOTON Y APARECERÁ LA TABLA DE RESULTADO YA RESUMIDA.(SI NO APARECE UN USUARIO ES PORQUE HAY UN DOBLE ESPACIO EN EL NOMBRE Y SI APARECE DOBLE INTERVENCIÓN SE DEBE VERIFICAR EL TEXTO QUE SE COPIA) EJEMPLO______________ COPIAR DESDE____ ¿3844/23	04/01/2023	LIZBETH FERNANDA CRUZ ALVAREZ	15	CUAL070709MTCRLZA3	CALLE PROLONGACION CAOBA  S/N	FRACC. PASEO DE LA PRIMAVERA	9931 767204 	F10.1 USO NOCIVO DE ALCOHOL	P.I.B.A? HASTA AQUI? RESULTADO= 3844/23	EN PROCESO	L.F.C.A.	ESTE EXPEDIENTE CONTIENE EL PIBA DEL USUARIO L.F.C.A.	04/01/2023 👘👘👘👘👘👘👘(dudas 9371378181)
+
+"></textarea>
+  <button onclick="procesarDatos()">Procesar Datos</button>
+</div>
+
+<div class="resultado">
+  <h2>Resultados: UNA VEZ OBTENIDOS LOS RESULTADO COPIAR DE FORMA MANUAL Y PEGAR DIRECTAMENTE A LA TABLA FINAL</h2>
+  <table id="tablaResultados">
+    <thead>
+      <tr>
+        <th>Número de expediente</th>
+        <th>Codigo de clasi</th>
+        <th>Usuario abreviado</th>
+        <th>Intervención</th>
+        <th>Fecha</th>
+      </tr>
+    </thead>
+    <tbody id="resultadosBody">
+      <!-- Aquí se mostrarán los resultados -->
+    </tbody>
+  </table>
+</div>
+
+<input type="text" id="nombreInput" placeholder="Ingresa el nombre para abreviar">
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
